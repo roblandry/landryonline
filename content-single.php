@@ -38,8 +38,7 @@
 		<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
 	</nav>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="imageborder">
+<article id="post-<?php the_ID(); ?>" <?php post_class('imageborder'); ?>>
 	  <header class="entry-header">
 	    <div class="header_01"><?php the_title(); ?></div>
 	    <?php if ( 'post' == get_post_type() ) : ?>
@@ -79,5 +78,4 @@
 		?>
 		<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 	  </footer>
-	</div>
 </article>
