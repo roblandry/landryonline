@@ -101,18 +101,24 @@ body {
 
 /* Singular */
 .singular #primary {
-	width: auto;
 }
 .singular #content,
 .left-sidebar.singular #content {
-	width: 1000px;
 }
 .singular .entry-header,
 .singular .entry-content,
 .singular footer.entry-meta,
 .singular #comments-title {
 }
-
+.page-template-default #primary{
+	width: 1000px;
+}
+.page-template-default #content{
+	width: 1000px;
+}
+.page-template-default #secondary{
+display: none;
+}
 /* Attachments */
 .singular .image-attachment .entry-content {
 	margin: 0 auto;
