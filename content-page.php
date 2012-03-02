@@ -8,7 +8,7 @@
  */
 ?>
 <!--content-page.php-->
-<article id="post-<?php the_ID(); ?>" <?php post_class('imageborder'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<div class="header_01"><?php the_title(); ?></div>
 	</header>
