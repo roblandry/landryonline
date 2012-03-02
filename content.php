@@ -8,8 +8,7 @@
  */
 ?>
 <!--content.php-->
- <div class="imageborder">
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('imageborder'); ?>>
 		<header class="entry-header">
 			<?php if ( is_sticky() ) : ?>
 				<hgroup>
@@ -79,4 +78,3 @@
 			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer>
 	</article>
-</div>
