@@ -13,9 +13,6 @@ Version:	1.0
 #site-title, .entry-title, .entry-title a, .widget-title, .header_01, #site-description { font-family:'Kaushan Script', cursive; color: #adadad !important; }
 .menu-item { font-family:'Leander', cursive; color: #adadad;}
 
-
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -85,7 +82,6 @@ body {
 	max-width: 1000px;
 }
 #branding hgroup {
-	margin: 0 7.6%;
 }
 #access div {
 	margin: 0 7.6%;
@@ -95,23 +91,20 @@ body {
 	width: 690px;
 }
 #content {
-	margin: 0;
+	float: left;
 	width: 690px
 }
 #secondary {
 	float: right;
-	margin-right: 0;
 	width: 260px;
 }
 
 /* Singular */
 .singular #primary {
-	margin: 0;
 	width: auto;
 }
 .singular #content,
 .left-sidebar.singular #content {
-	position: relative;
 	width: 690px;
 }
 .singular .entry-header,
@@ -153,11 +146,9 @@ body {
 
 /* error404 */
 .error404 #primary {
-	float: none;
 	margin: 0;
 }
 .error404 #primary #content {
-	margin: 0 7.6%;
 	width: auto;
 }
 
@@ -182,7 +173,6 @@ body {
 /* Right Content */
 .left-sidebar #primary {
 	float: right;
-	margin: 0;
 }
 .left-sidebar #content {
 	float: right;
@@ -204,7 +194,6 @@ body {
 }
 .one-column #secondary {
 	float: none;
-	margin: 0 7.6%;
 	width: auto;
 }
 /* Simplify the showcase template */
@@ -751,6 +740,9 @@ a.tmenu {
 /* Search Form */
 #branding #searchform {
 	text-align: right;
+	position: absolute;
+	top: 80px;
+	right: 135px
 }
 #branding #searchform div {
 	margin: 0;
@@ -874,6 +866,12 @@ a.tmenu {
 .entry-content,
 .entry-summary {
 	padding: 1.625em 2em 0;
+}
+#author-info { 
+	padding: 1.625em; 
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 600px; 
 }
 .entry-content h1,
 .entry-content h2,
@@ -1111,16 +1109,9 @@ object {
 	overflow: hidden;
 }
 .singular #author-info {
-	background: #f9f9f9;
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
-	margin: 2.2em -35.6% 0 -35.4%;
-	padding: 20px 35.4%;
+	background: none !important; 
 }
 .archive #author-info {
-	border-bottom: 1px solid #ddd;
-	margin: 0 0 2.2em;
-	padding: 0 0 2.2em;
 }
 #author-avatar {
 	float: left;
@@ -1412,7 +1403,6 @@ blockquote.pull {
 	background: #f9f9f9;
 /*	border: 1px solid #ddd; */
 	border-width: 1px 0;
-	margin: 0 -8.9% 1.625em;
 	overflow: hidden;
 	padding: 1.625em 8.9%;
 }
@@ -1420,10 +1410,6 @@ blockquote.pull {
 	width: 95%;
 }
 .error404 #main .widget {
-	clear: none;
-	float: left;
-	margin-right: 3.7%;
-	width: 30.85%;
 }
 .error404 #main .widget_archive {
 	margin-right: 0;
