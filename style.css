@@ -105,7 +105,7 @@ body {
 }
 .singular #content,
 .left-sidebar.singular #content {
-	width: 690px;
+	width: 1000px;
 }
 .singular .entry-header,
 .singular .entry-content,
@@ -1202,7 +1202,6 @@ article.format-status .entry-content {
 .singular .hentry {
 }
 .singular.page .hentry {
-	padding: 3.5em 0 0;
 }
 .singular .entry-title {
 	color: #000;
